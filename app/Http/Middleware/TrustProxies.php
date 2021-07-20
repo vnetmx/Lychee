@@ -12,14 +12,14 @@ class TrustProxies extends Middleware
 	 *
 	 * @var array|string|null
 	 */
-	protected $proxies = [
-		'10.0.2.2',
-	];
+         protected $proxies = [
+              '10.88.1.151',
+         ];
 
-	/**
-	 * The headers that should be used to detect proxies.
-	 *
-	 * @var int
-	 */
-	protected $headers = Request::HEADER_X_FORWARDED_ALL;
+         /**
+          * The headers that should be used to detect proxies.
+          *
+          * @var string
+          */
+          protected $headers = Request::HEADER_X_FORWARDED_ALL;
 }
